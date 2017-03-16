@@ -1,0 +1,9 @@
+{
+  "name": "Easter",
+  "description": "Easter is coming!",
+  "repository": "https://github.com/Trude/easter",
+  "keywords": ["ember.js", "static"],
+  "buildpacks": [
+    { "url": "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz" }
+  ]
+}
