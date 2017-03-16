@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-js-getting-started',
+    modulePrefix: 'easter',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
