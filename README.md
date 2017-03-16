@@ -1,4 +1,4 @@
-# ember-js-getting-started
+# Easter
 
 A barebones Ember.js app, which can easily be deployed to Heroku.
 
