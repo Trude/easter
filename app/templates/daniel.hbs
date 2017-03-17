@@ -1,0 +1,13 @@
+<div>Oppdrag gjennomførst: 2</div>
+
+<div {{action 'continueHunt'}}>Fortsett påskejakten!</div>
+<h2>{{headerText}}</h2>
+
+{{#if (eq currentMission 2)}}
+  <div>Hvor mange hytter er det i gaten fra krysset og ned til skibakken?</div>
+  {{input type="text" key-up="mission2"}}
+{{/if}}
+
+{{#if (eq currentMission 3)}}
+  Du må løse TETRIS!
+{{/if}}

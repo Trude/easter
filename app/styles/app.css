@@ -34,3 +34,10 @@
 .jumbotron .lang-logo img {
   max-width: 100%;
 }
+
+.login-image{
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
