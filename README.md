@@ -1,46 +1,52 @@
-# Easter
+# easter
 
-A barebones Ember.js app, which can easily be deployed to Heroku.
-
-**This app is deployed as a static app, if you would like to try a one click deploy of a FastBoot app check out [this branch](https://github.com/heroku/ember-js-getting-started/tree/fastboot).**
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Bower](https://bower.io/)
+* [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Running Locally
+## Installation
 
-```sh
-$ git clone git@github.com:heroku/ember-js-getting-started.git
-$ cd ember-js-getting-started
-$ npm install
-$ bower install
-$ ember server
-```
-Your app should now be running on [localhost:4200](http://localhost:4200/).
+* `git clone <repository-url>` this repository
+* `cd easter`
+* `npm install`
+* `bower install`
 
-## Deploying to Heroku
+## Running / Development
 
-```sh
-$ heroku create --buildpack https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz
-$ git push heroku master
-$ heroku open
-```
-or
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/ember-js-getting-started)
+### Code Generators
 
-## Documentation
+Make use of the many generators for code, try `ember help generate` for more details
 
-* [Heroku Ember.js Buildpack](https://github.com/heroku/heroku-buildpack-emberjs)
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
 * [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
+* [ember-cli](https://ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
