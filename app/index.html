@@ -1,11 +1,25 @@
-<!DOCTYPE html>
 <html>
+<!-- Legg til for offline caching av ressursfiler -->
+<!--<html manifest="manifest.appcache">-->
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Easter</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Legg til for offline caching av ressursfiler -->
+    <!--<script type='text/javascript'>
+      window.addEventListener('load', function(e) {
+        window.applicationCache.addEventListener('updateready', function(e) {
+          if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+            window.applicationCache.swapCache();
+            window.location.reload();
+          }
+        }, false);
+      }, false);
+    </script>-->
 
     {{content-for "head"}}
 
