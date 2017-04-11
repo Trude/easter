@@ -8,21 +8,40 @@
     <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
   
   {{else if (eq currentQuestion 1)}}
-    <div class="question">Hvem er kongen av dinosaurusene?</div>
-    <div class="answer">{{#radio-button value=1 groupValue=dino changed="dinoSelected"}} Danielosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=2 groupValue=dino changed="dinoSelected"}} Brontosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=3 groupValue=dino changed="dinoSelected"}} Velociraptor {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=4 groupValue=dino changed="dinoSelected"}} Stegosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=5 groupValue=dino changed="dinoSelected"}} Tyranosaurus Rex {{/radio-button}}</div>
+    <div class="question">Noen måneder har 31 dager, og noen har 30. Hvor mange måneder har 28 dager?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=month changed="monthSelected"}} 1 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=12 groupValue=month changed="monthSelected"}} 12 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=6 groupValue=month changed="monthSelected"}} 6 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=7 groupValue=month changed="monthSelected"}} 7 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=9 groupValue=month changed="monthSelected"}} 9 {{/radio-button}}</div>
     <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
   
   {{else if (eq currentQuestion 2)}}
-    <div class="question">Hva evolver picachu seg til?</div>
-    <div class="answer">{{#radio-button value=1 groupValue=pokemon changed="pokemonAnswer"}} Gunnar {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Raichu {{/radio-button}}</div>
+    <div class="question">Hvilken pokemon er dette skyggen til?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=pokemon changed="pokemonAnswer"}} Articuno {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Zapdos {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=pokemon changed="pokemonAnswer"}} Moltres {{/radio-button}}</div>
+    <img class="question-image" src="images/pokemon.png" />
     <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
-  
+
   {{else if (eq currentQuestion 3)}}
+    <div class="question">Hva er tyngst?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=measurement changed="measurementAnswer"}} 1 kg fjær {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=measurement changed="measurementAnswer"}} 1 kg bly {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=measurement changed="measurementAnswer"}} 1001 gram {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=measurement changed="measurementAnswer"}} 1 kg påskegodis {{/radio-button}}</div>
+    <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 4)}}
+    <div class="question">Hvem er kongen av dinosaurusene?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=dino changed="dinoAnswer"}} Danielosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=dino changed="dinoAnswer"}} Brontosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=dino changed="dinoAnswer"}} Velociraptor {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=dino changed="dinoAnswer"}} Stegosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=5 groupValue=dino changed="dinoAnswer"}} Tyranosaurus Rex {{/radio-button}}</div>
+    <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
+  
+  {{else if (eq currentQuestion 5)}}
     {{#if allAnswersCorrect}}
       <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>ÅED</b>.</div>
       <div>Slå de sammen med bokstavene til de andre, så kanskje dere kommer videre!</div>

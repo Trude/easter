@@ -15,8 +15,9 @@
   {{input class="input-one" size=1 maxlength=1 value=let11}}
   {{input class="input-one" size=1 maxlength=1 value=let12}}
   </div>
-  <button {{action "mainSolutionCheck"}}>Tror du at du har riktig løsning? Klikk her!</button>
 
   {{#if (eq wronganswer true)}}
-    Feil svar! Prøv igjen din knott!
+    <div>Feil svar! Prøv igjen din knott!</div>
   {{/if}}
+  
+  <button {{action "mainSolutionCheck"}}>Tror du at du har riktig løsning? Klikk her!</button>

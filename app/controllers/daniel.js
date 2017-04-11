@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
   }.property('isTimeForHunt'),
 
   allAnswersCorrect: function(){
-    return this.get('a1') === 5 && this.get('a2') === 2;
+    return this.get('a1') === 12 && this.get('a2') === 2 && this.get('a3') === 3 && this.get('a4') === 5;
   }.property('a1', 'a2', 'a3', 'a4', 'a5'),
 
   actions: {
@@ -26,16 +26,18 @@ export default Ember.Controller.extend({
     },
     GotoQ1: function(){
       this.set('a1', null);
-      this.set('dino', null);
+      this.set('month', null);
       this.set('a2', null);
       this.set('pokemon', null);
       this.set('a3', null);
+      this.set('measurement', null);
       this.set('a4', null);
+      this.set('dino', null);
       this.set('a5', null);
       this.set('currentQuestion', 1);
     },
-    dinoSelected: function(dinoSelected){
-      this.set('a1', dinoSelected);
+    monthSelected: function(monthSelected){
+      this.set('a1', monthSelected);
     },
     GotoQ2: function(){
         this.set('currentQuestion', 2);
@@ -45,6 +47,18 @@ export default Ember.Controller.extend({
     },
     GotoQ3: function(){
         this.set('currentQuestion', 3);
+    },
+    measurementAnswer: function(measurementAnswer){
+      this.set('a3', measurementAnswer);
+    },
+    dinoAnswer: function(dinoAnswer){
+      this.set('a4', dinoAnswer);
+    },
+    GotoQ4: function(){
+        this.set('currentQuestion', 4);
+    },
+    GotoQ5: function(){
+        this.set('currentQuestion', 5);
     },
   }
 });

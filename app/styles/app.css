@@ -37,6 +37,13 @@ button {
   padding: 2px;
 }
 
+.question-image {
+  max-width: 50%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .main-answer {
   margin: 20px;
 }
