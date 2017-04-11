@@ -46,12 +46,11 @@
 
   {{else if (eq currentQuestion 5)}}
     {{#if allAnswersCorrect}}
-      Jippi! Du svarte alt rett!
-      Dine bokstaver er GEG
-      <div>Slå de sammen med bokstavene til en setning, så kanskje dere kommer videre!</div>
+      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>GEG</b>.</div>
+      <div>Slå de sammen med bokstavene til de andre, så kanskje dere kommer videre!</div>
       {{main-answer}}
     {{else}}
-      Ånei! Du hadde noen svar feil!
+      <div>Ånei! Du hadde noen svar feil!</div>
       <button {{action 'GotoQ1'}}>Prøv på nytt!</button>
     {{/if}}
   {{/if}}
