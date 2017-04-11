@@ -1,1 +1,35 @@
-tiril
+{{#if isBeforeGametime}}
+  <div>Tid til neste hint blir tilgjengelig:</div>
+  <div class="count-down">{{count-down actionHour=20 action="beginHunt"}}</div>
+
+{{else}}
+  {{#if (eq currentQuestion 0)}}
+    <div>Er du klar for å starte quizzen Tiril?</div>
+    <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
+
+  {{else if (eq currentQuestion 1)}}
+    Hvem spiller rollen som Caroline Forbes i Vampire Diaries?
+    {{#radio-button value=1 groupValue=vampire changed="vampireAnswered"}} Kat Graham {{/radio-button}}
+    {{#radio-button value=2 groupValue=vampire changed="vampireAnswered"}} Elena Gilbert {{/radio-button}}
+    {{#radio-button value=3 groupValue=vampire changed="vampireAnswered"}} Sara Canning {{/radio-button}}
+    {{#radio-button value=4 groupValue=vampire changed="vampireAnswered"}} Claire Holt {{/radio-button}}
+    {{#radio-button value=5 groupValue=vampire changed="vampireAnswered"}} Candice King {{/radio-button}}
+
+    <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 2)}}
+
+    {{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Raichu {{/radio-button}}
+    <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 3)}}
+    {{#if allAnswersCorrect}}
+      Jippi! Du svarte alt rett!
+      Dine bokstaver er GEG
+      <div>Slå de sammen med bokstavene til en setning, så kanskje dere kommer videre!</div>
+    {{else}}
+      Ånei! Du hadde noen svar feil!
+      <button {{action 'GotoQ1'}}>Prøv på nytt!</button>
+    {{/if}}
+  {{/if}}
+{{/if}}
