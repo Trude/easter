@@ -1,10 +1,12 @@
 {{#if isBeforeGametime}}
-  Du må vente til klokken er 11 for å begynne jakten!
-  {{count-down actionHour=11 action="beginHunt"}}
+  <div>Tid til neste hint blir tilgjengelig:</div>
+  <div class="count-down">{{count-down actionHour=23 action="beginHunt"}}</div>
+
 {{else}}
   {{#if (eq currentQuestion 0)}}
-    Er du klar for å starte quizzen Daniel?
-    <button {{action 'GotoQ1'}}>Gå til første spørsmål!</button>
+    <div>Er du klar for å starte quizzen Daniel?</div>
+    <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
+  
   {{else if (eq currentQuestion 1)}}
     Hvem er kongen av dinosaurusene?
     {{#radio-button value=1 groupValue=dino changed="dinoSelected"}} Danielosaurus {{/radio-button}}
@@ -13,11 +15,13 @@
     {{#radio-button value=4 groupValue=dino changed="dinoSelected"}} Stegosaurus {{/radio-button}}
     {{#radio-button value=5 groupValue=dino changed="dinoSelected"}} Tyranosaurus Rex {{/radio-button}}
     <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
+  
   {{else if (eq currentQuestion 2)}}
     Hva evolver picachu seg til?
     {{#radio-button value=1 groupValue=pokemon changed="pokemonAnswer"}} Gunnar {{/radio-button}}
     {{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Raichu {{/radio-button}}
     <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
+  
   {{else if (eq currentQuestion 3)}}
     {{#if allAnswersCorrect}}
       Jippi! Du svarte alt rett!
