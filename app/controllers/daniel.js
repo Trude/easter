@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
   isBeforeGametime: function(){
     var date = new Date();
     var hour = date.getHours();
-    return hour < 23;
+    return hour < 11;
   }.property('isTimeForHunt'),
 
   allAnswersCorrect: function(){

@@ -1,34 +1,34 @@
 {{#if isBeforeGametime}}
-  <div>Tid til neste hint blir tilgjengelig:</div>
-  <div class="count-down">{{count-down actionHour=23 action="beginHunt"}}</div>
+  <div>Velkommen, Daniel! Tid til neste hint blir tilgjengelig:</div>
+  <div class="count-down">{{count-down actionHour=11 action="beginHunt"}}</div>
 
 {{else}}
   {{#if (eq currentQuestion 0)}}
-    <div>Er du klar for å starte quizzen Daniel?</div>
+    <div>Er du klar for noen spørsmål, Daniel?</div>
     <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
   
   {{else if (eq currentQuestion 1)}}
-    Hvem er kongen av dinosaurusene?
-    {{#radio-button value=1 groupValue=dino changed="dinoSelected"}} Danielosaurus {{/radio-button}}
-    {{#radio-button value=2 groupValue=dino changed="dinoSelected"}} Brontosaurus {{/radio-button}}
-    {{#radio-button value=3 groupValue=dino changed="dinoSelected"}} Velociraptor {{/radio-button}}
-    {{#radio-button value=4 groupValue=dino changed="dinoSelected"}} Stegosaurus {{/radio-button}}
-    {{#radio-button value=5 groupValue=dino changed="dinoSelected"}} Tyranosaurus Rex {{/radio-button}}
+    <div class="question">Hvem er kongen av dinosaurusene?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=dino changed="dinoSelected"}} Danielosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=dino changed="dinoSelected"}} Brontosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=dino changed="dinoSelected"}} Velociraptor {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=dino changed="dinoSelected"}} Stegosaurus {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=5 groupValue=dino changed="dinoSelected"}} Tyranosaurus Rex {{/radio-button}}</div>
     <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
   
   {{else if (eq currentQuestion 2)}}
-    Hva evolver picachu seg til?
-    {{#radio-button value=1 groupValue=pokemon changed="pokemonAnswer"}} Gunnar {{/radio-button}}
-    {{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Raichu {{/radio-button}}
+    <div class="question">Hva evolver picachu seg til?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=pokemon changed="pokemonAnswer"}} Gunnar {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=pokemon changed="pokemonAnswer"}} Raichu {{/radio-button}}</div>
     <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
   
   {{else if (eq currentQuestion 3)}}
     {{#if allAnswersCorrect}}
-      Jippi! Du svarte alt rett!
-      Dine bokstaver er ÅED
-      <div>Slå de sammen med bokstavene til en setning, så kanskje dere kommer videre!</div>
+      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>ÅED</b>.</div>
+      <div>Slå de sammen med bokstavene til de andre, så kanskje dere kommer videre!</div>
+      {{main-answer}}
     {{else}}
-      Ånei! Du hadde noen svar feil!
+      <div>Ånei! Du hadde noen svar feil!</div>
       <button {{action 'GotoQ1'}}>Prøv på nytt!</button>
     {{/if}}
   {{/if}}
