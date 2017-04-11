@@ -41,3 +41,11 @@
   width: auto;
   height: auto;
 }
+.input-one{
+  border: 1px solid black;
+}
+
+.button-big{
+  border: 1px solid black;
+  width: 50%
+}

@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('tiril');
   this.route('hilde');
   this.route('svein');
+  this.route('finish');
 });
 
 export default Router;
