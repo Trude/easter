@@ -1,1 +1,54 @@
-svein
+{{#if isBeforeGametime}}
+  <div>Tid til neste hint blir tilgjengelig:</div>
+  <div class="count-down">{{count-down actionHour=11 action="beginHunt"}}</div>
+
+{{else}}
+  {{#if (eq currentQuestion 0)}}
+    <div>Er du klar for å starte quizzen Svein?</div>
+    <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
+
+  {{else if (eq currentQuestion 1)}}
+    <div class="question">Hva er er 2 dusin ganger 3 snes ganger 1 skokk?</div>
+    {{input value=a1}}
+
+    <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 2)}}
+    <div class="question">Hvem har hovedrollen i den nye sesongen av SKAM?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=skam changed="skamsvar"}} Noora {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=skam changed="skamsvar"}} Eskil {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=skam changed="skamsvar"}} Sana {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=skam changed="skamsvar"}} Mahdi {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=5 groupValue=skam changed="skamsvar"}} Vilde {{/radio-button}}</div>
+    <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 3)}}
+      <div class="question">Hva er Lady Gaga sitt fulle navn?</div>
+      <div class="answer">{{#radio-button value=1 groupValue=gaga changed="gagasvar"}} Sara Palin {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=2 groupValue=gaga changed="gagasvar"}} Stefani Joanne Angelina Germanotta {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=3 groupValue=gaga changed="gagasvar"}} Sharon Sand Stone {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=4 groupValue=gaga changed="gagasvar"}} Jenine Bescudo {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=5 groupValue=gaga changed="gagasvar"}} Johanna Angelina Armani Percotta {{/radio-button}}</div>
+      <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 4)}}
+      <div class="question">Hvem forbinder du med filmen Home, Robyn Fenty og plata Anti.</div>
+      <div class="answer">{{#radio-button value=1 groupValue=rihanna changed="rihannasvar"}} Lady Gaga {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=2 groupValue=rihanna changed="rihannasvar"}} Britney Spears {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=3 groupValue=rihanna changed="rihannasvar"}} Beyonce {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=4 groupValue=rihanna changed="rihannasvar"}} Taylor Swift {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=5 groupValue=rihanna changed="rihannasvar"}} Rihanna {{/radio-button}}</div>
+      <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
+
+  {{else if (eq currentQuestion 5)}}
+    {{#if allAnswersCorrect}}
+      Jippi! Du svarte alt rett!
+      Dine bokstaver er GEG
+      <div>Slå de sammen med bokstavene til en setning, så kanskje dere kommer videre!</div>
+      {{main-answer}}
+    {{else}}
+      Ånei! Du hadde noen svar feil!
+      <button {{action 'GotoQ1'}}>Prøv på nytt!</button>
+    {{/if}}
+  {{/if}}
+{{/if}}
