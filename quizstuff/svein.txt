@@ -1,0 +1,50 @@
+QUIZ-spørsmål:
+
+Svein:
+Spørsmål 1:
+Du har 10 fisk i akvariumet ditt før du reiser på en ukes ferie. Den andre dagen du er borte dør 2 fisk. Dagen før du kommer hjem igjen dør ytterligere 3 fisk. Hvor mange er det igjen?
+* - 10 fisk (hvordan 5 av dem er døde)
+- 7
+- 5
+- 8
+
+Spørsmål 2:
+Det er 5 hus i 5 forskjellige farger. De 5 huseierne har hver sin husfarge, nasjonalitet, favorittdrikk, bilmerke og kjæledyr. Ingen av eierne har samme husfarge, nasjonalitet, favorittdrikk, bilmerke eller kjæledyr. Spørsmålet er, hvem eier fisken?:
+
+Tråder:
+• Engelskmannen bor i det røde huset
+• Svensken har hund som kjæledyr
+• Dansken drikker te
+• Det grønne huset er nabohuset til venstre for det grå huset
+• Eieren av det grønne huset drikker kaffe
+• Personen som eier opelen har fugl som kjæledyr
+• Eieren av det gule huset kjører Toyota
+• Mannen i huset i midten drikker melk
+• Nordmannen bor i hus nr. 1
+• Mannen som kjører Ford bor ved siden av han som har katt
+• Mannen som har hest bor ved siden av han som kjører Toyota
+• Eieren av ladaen drikker brus
+• Tyskeren kjører Volvo
+• Nordmannen bor ved siden av det blå huset
+• Mannen som kjører Ford har en nabo som drikker vann
+
+Svar: 
+* - Tyskeren
+- Nordmannen
+- Engelskmannen
+- Svensken
+- Dansken
+
+Spørsmål 3:
+Det er hvit sitt trekk. Hva er neste trekk for å sette svart i sjakk matt på to trekk? (se bilde chess.png)
+https://gameknot.com/chess-puzzle.pl?pz=16585&daily=3
+- 
+-
+-
+-
+
+Spørsmål 4:
+-
+-
+-
+-
