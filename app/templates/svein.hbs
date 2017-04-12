@@ -14,7 +14,7 @@
     <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 2)}}
-    <div class="question">Du har 10 fisk i akvariumet ditt før du reiser på en ukes ferie. Den </div>
+    <div class="question">Du har 10 fisk i akvariumet ditt før du reiser på en ukes ferie. Den andre dagen du er borte dør 2 fisk. Dagen før du kommer hjem igjen dør ytterligere 3 fisk. Hvor mange er det igjen? </div>
     <div class="answer">{{#radio-button value=7 groupValue=fisk changed="fiskesvar"}} 7 {{/radio-button}}</div>
     <div class="answer">{{#radio-button value=10 groupValue=fisk changed="fiskesvar"}} 10 {{/radio-button}}</div>
     <div class="answer">{{#radio-button value=5 groupValue=fisk changed="fiskesvar"}} 5 {{/radio-button}}</div>
@@ -33,13 +33,12 @@
       <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 4)}}
-      <div class="question">Hvem forbinder du med filmen Home, Robyn Fenty og plata Anti.</div>
-      <div class="answer">{{#radio-button value=1 groupValue=rihanna changed="rihannasvar"}} Lady Gaga {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=2 groupValue=rihanna changed="rihannasvar"}} Britney Spears {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=3 groupValue=rihanna changed="rihannasvar"}} Beyonce {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=4 groupValue=rihanna changed="rihannasvar"}} Taylor Swift {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=5 groupValue=rihanna changed="rihannasvar"}} Rihanna {{/radio-button}}</div>
-      <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
+  <div class="question">Hva er det totale arealet til denne flotte skapningen? Alle trekantene og rektanglene inne i boksen er like store</div>
+  <div class="question">Påskeharen bruker kun 2 desimaler, så det kan du gjøre også</div>
+  <img class="question-image" src="images/areal.png" />
+  {{input value=a4}}
+
+  <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 5)}}
     {{#if allAnswersCorrect}}

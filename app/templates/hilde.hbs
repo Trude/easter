@@ -6,7 +6,7 @@
   {{#if (eq currentQuestion 0)}}
     <div>Er du klar for noen spørsmål, Hilde?</div>
     <button {{action 'GotoQ1'}}>Gå til første spørsmål</button>
-  
+
   {{else if (eq currentQuestion 1)}}
     <div class="question">Hvilket fjell var Norges høyeste før Galdhøpiggen ble oppdaget?</div>
     <div class="answer">{{#radio-button value=1 groupValue=fjell changed="fjellSelected"}} Store Skagastølstind {{/radio-button}}</div>
@@ -15,7 +15,7 @@
     <div class="answer">{{#radio-button value=4 groupValue=fjell changed="fjellSelected"}} Mount Everest {{/radio-button}}</div>
     <div class="answer">{{#radio-button value=5 groupValue=fjell changed="fjellSelected"}} Tjønnholstinden {{/radio-button}}</div>
     <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
-  
+
   {{else if (eq currentQuestion 2)}}
     <div class="question">Hva er vrangbord?</div>
     <div class="answer">{{#radio-button value=1 groupValue=knitting changed="knittingAnswer"}} En bord som er strikket feil {{/radio-button}}</div>
@@ -41,10 +41,10 @@
     <div class="answer">{{#radio-button value=4 groupValue=dino changed="dinoAnswer"}} Stegosaurus {{/radio-button}}</div>
     <div class="answer">{{#radio-button value=5 groupValue=dino changed="dinoAnswer"}} Tyranosaurus Rex {{/radio-button}}</div>
     <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
-  
+
   {{else if (eq currentQuestion 5)}}
     {{#if allAnswersCorrect}}
-      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>ÅED</b>.</div>
+      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>NRK</b>.</div>
       <div>Slå de sammen med bokstavene til de andre, så kanskje dere kommer videre!</div>
       {{main-answer}}
     {{else}}
