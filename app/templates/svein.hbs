@@ -11,24 +11,25 @@
     <div class="question">Hva er er 2 dusin ganger 3 snes ganger 1 skokk?</div>
     {{input value=a1}}
 
-    <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
+    <button {{action 'GotoQ2'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 2)}}
-    <div class="question">Hvem har hovedrollen i den nye sesongen av SKAM?</div>
-    <div class="answer">{{#radio-button value=1 groupValue=skam changed="skamsvar"}} Noora {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=2 groupValue=skam changed="skamsvar"}} Eskil {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=3 groupValue=skam changed="skamsvar"}} Sana {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=4 groupValue=skam changed="skamsvar"}} Mahdi {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=5 groupValue=skam changed="skamsvar"}} Vilde {{/radio-button}}</div>
+    <div class="question">Du har 10 fisk i akvariumet ditt før du reiser på en ukes ferie. Den </div>
+    <div class="answer">{{#radio-button value=7 groupValue=fisk changed="fiskesvar"}} 7 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=10 groupValue=fisk changed="fiskesvar"}} 10 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=5 groupValue=fisk changed="fiskesvar"}} 5 {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=8 groupValue=fisk changed="fiskesvar"}} 8 {{/radio-button}}</div>
     <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
 
+
   {{else if (eq currentQuestion 3)}}
-      <div class="question">Hva er Lady Gaga sitt fulle navn?</div>
-      <div class="answer">{{#radio-button value=1 groupValue=gaga changed="gagasvar"}} Sara Palin {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=2 groupValue=gaga changed="gagasvar"}} Stefani Joanne Angelina Germanotta {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=3 groupValue=gaga changed="gagasvar"}} Sharon Sand Stone {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=4 groupValue=gaga changed="gagasvar"}} Jenine Bescudo {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=5 groupValue=gaga changed="gagasvar"}} Johanna Angelina Armani Percotta {{/radio-button}}</div>
+      <div class="question">Det er hvit sitt trekk. Hva er neste trekk for å sette svart i sjakk matt på to trekk?</div>
+      <div class="answer">{{#radio-button value=1 groupValue=sjakk changed="sjakksvar"}} Sara Palin {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=2 groupValue=sjakk changed="sjakksvar"}} Stefani Joanne Angelina Germanotta {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=3 groupValue=sjakk changed="sjakksvar"}} Sharon Sand Stone {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=4 groupValue=sjakk changed="sjakksvar"}} Jenine Bescudo {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=5 groupValue=sjakk changed="sjakksvar"}} Qd7+ {{/radio-button}}</div>
+      <img class="question-image" src="images/chess.png" />
       <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 4)}}

@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
   }.property('isTimeForHunt'),
 
   allAnswersCorrect: function(){
-    return this.get('a1') === '86400';// && this.get('a2') === 3 && this.get('a3') === 2 && this.get('a4') === 5;
+    return this.get('a1') === '86400' && this.get('a2') === 10 && this.get('a3') === 5;// && this.get('a4') === 5;
   }.property('a1', 'a2', 'a3', 'a4'),
 
   actions: {
@@ -25,14 +25,20 @@ export default Ember.Controller.extend({
     },
 
     GotoQ1: function(){
-      this.set('vampire', null);
-      this.set('skam', null);
+      this.set('sjakk', null);
+      this.set('fisk', null);
       this.set('a1', null);
       this.set('a2', null);
       this.set('a3', null);
       this.set('a4', null);
       this.set('a5', null);
       this.set('currentQuestion', 1);
+    },
+    fiskesvar: function(fiskesvar){
+      this.set('a2', fiskesvar);
+    },
+    sjakksvar: function(sjakksvar){
+      this.set('a3', sjakksvar);
     },
     GotoQ2: function(){
         this.set('currentQuestion', 2);
