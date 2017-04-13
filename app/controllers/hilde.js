@@ -30,9 +30,9 @@ export default Ember.Controller.extend({
       this.set('a2', null);
       this.set('knitting', null);
       this.set('a3', null);
-      this.set('measurement', null);
+      this.set('ski', null);
       this.set('a4', null);
-      this.set('dino', null);
+      this.set('egg', null);
       this.set('a5', null);
       this.set('currentQuestion', 1);
     },
@@ -48,11 +48,11 @@ export default Ember.Controller.extend({
     GotoQ3: function(){
         this.set('currentQuestion', 3);
     },
-    measurementAnswer: function(measurementAnswer){
-      this.set('a3', measurementAnswer);
+    skiAnswer: function(skiAnswer){
+      this.set('a3', skiAnswer);
     },
-    dinoAnswer: function(dinoAnswer){
-      this.set('a4', dinoAnswer);
+    eggAnswer: function(eggAnswer){
+      this.set('a4', eggAnswer);
     },
     GotoQ4: function(){
         this.set('currentQuestion', 4);

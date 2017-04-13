@@ -26,20 +26,20 @@
     <button {{action 'GotoQ3'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 3)}}
-    <div class="question">Hva er tyngst?</div>
-    <div class="answer">{{#radio-button value=1 groupValue=measurement changed="measurementAnswer"}} 1 kg fjær {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=2 groupValue=measurement changed="measurementAnswer"}} 1 kg bly {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=3 groupValue=measurement changed="measurementAnswer"}} 1001 gram {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=4 groupValue=measurement changed="measurementAnswer"}} 1 kg påskegodis {{/radio-button}}</div>
+    <div class="question">Hvilke smøring fungerer best på nysnø og 2 grader pluss?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=ski changed="skiAnswer"}} Swix Blå {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=ski changed="skiAnswer"}} Swix Rød {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=ski changed="skiAnswer"}} Swix Lilla {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=ski changed="skiAnswer"}} Swix Grønn {{/radio-button}}</div>
     <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 4)}}
-    <div class="question">Hvem er kongen av dinosaurusene?</div>
-    <div class="answer">{{#radio-button value=1 groupValue=dino changed="dinoAnswer"}} Danielosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=2 groupValue=dino changed="dinoAnswer"}} Brontosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=3 groupValue=dino changed="dinoAnswer"}} Velociraptor {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=4 groupValue=dino changed="dinoAnswer"}} Stegosaurus {{/radio-button}}</div>
-    <div class="answer">{{#radio-button value=5 groupValue=dino changed="dinoAnswer"}} Tyranosaurus Rex {{/radio-button}}</div>
+    <div class="question">Russeren Fabergé laget verdens vakreste påskeegg. Hva laget han dem av?</div>
+    <div class="answer">{{#radio-button value=1 groupValue=egg changed="eggAnswer"}} Strutseegg {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=2 groupValue=egg changed="eggAnswer"}} Stein {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=3 groupValue=egg changed="eggAnswer"}} Hønseegg {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=4 groupValue=egg changed="eggAnswer"}} Tre {{/radio-button}}</div>
+    <div class="answer">{{#radio-button value=5 groupValue=egg changed="eggAnswer"}} Edle metaller og edelstener  {{/radio-button}}</div>
     <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 5)}}
