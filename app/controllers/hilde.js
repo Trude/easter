@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
   }.property('isTimeForHunt'),
 
   allAnswersCorrect: function(){
-    return this.get('a1') === 2 && this.get('a2') === 2 && this.get('a3') === 3 && this.get('a4') === 5;
+    return this.get('a1') === 2 && this.get('a2') === 2 && this.get('a3') === 2 && this.get('a4') === 5;
   }.property('a1', 'a2', 'a3', 'a4', 'a5'),
 
   actions: {
