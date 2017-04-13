@@ -24,25 +24,27 @@
 
   {{else if (eq currentQuestion 3)}}
       <div class="question">Det er hvit sitt trekk. Hva er neste trekk for å sette svart i sjakk matt på to trekk?</div>
-      <div class="answer">{{#radio-button value=1 groupValue=sjakk changed="sjakksvar"}} Sara Palin {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=2 groupValue=sjakk changed="sjakksvar"}} Stefani Joanne Angelina Germanotta {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=3 groupValue=sjakk changed="sjakksvar"}} Sharon Sand Stone {{/radio-button}}</div>
-      <div class="answer">{{#radio-button value=4 groupValue=sjakk changed="sjakksvar"}} Jenine Bescudo {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=1 groupValue=sjakk changed="sjakksvar"}} Nxf7+ {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=2 groupValue=sjakk changed="sjakksvar"}} Be7+ {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=3 groupValue=sjakk changed="sjakksvar"}} Bg5+ {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=4 groupValue=sjakk changed="sjakksvar"}} Qb4 {{/radio-button}}</div>
       <div class="answer">{{#radio-button value=5 groupValue=sjakk changed="sjakksvar"}} Qd7+ {{/radio-button}}</div>
+      <div class="answer">{{#radio-button value=6 groupValue=sjakk changed="sjakksvar"}} Nxc7 {{/radio-button}}</div>
       <img class="question-image" src="images/chess.png" />
       <button {{action 'GotoQ4'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 4)}}
   <div class="question">Hva er det totale arealet til denne flotte skapningen? Alle trekantene og rektanglene inne i boksen er like store</div>
   <div class="question">Påskeharen bruker kun 2 desimaler, så det kan du gjøre også</div>
+  <div>{{input value=a4}}cm<sup>2</sup></div>
+  
   <img class="question-image" src="images/areal.png" />
-  {{input value=a4}}
 
   <button {{action 'GotoQ5'}}>Gå til neste spørsmål!</button>
 
   {{else if (eq currentQuestion 5)}}
     {{#if allAnswersCorrect}}
-      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>GEG</b>.</div>
+      <div class="question">Jippi! Du svarte alt rett! Dine bokstaver er <b>SPI</b>.</div>
       <div>Slå de sammen med bokstavene til de andre, så kanskje dere kommer videre!</div>
       {{main-answer}}
     {{else}}
