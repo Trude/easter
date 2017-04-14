@@ -1,6 +1,7 @@
-<!--<html>-->
+<!DOCTYPE html>
+<html>
 <!-- Legg til for offline caching av ressursfiler -->
-<html manifest="cache.manifest">
+<!--<html lang="no" manifest="cache.manifest">-->
 
   <head>
     <meta charset="utf-8">
@@ -13,7 +14,7 @@
     <link rel="icon" href="/images/favicon.ico">
 
     <!-- Legg til for offline caching av ressursfiler -->
-    <script type='text/javascript'>
+    <!--<script type='text/javascript'>
       window.addEventListener('load', function(e) {
         window.applicationCache.addEventListener('updateready', function(e) {
           if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
@@ -22,7 +23,7 @@
           }
         }, false);
       }, false);
-    </script>
+    </script>-->
 
     {{content-for "head"}}
 
