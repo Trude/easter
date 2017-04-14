@@ -103,7 +103,8 @@ button {
 .input-one{
   border: 1px solid black;
   font-size: 25px;
-    width: 35px;
+  width: 35px;
+  padding: 0;
 }
 
 .button-big{
